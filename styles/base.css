@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* TODO - ROBOTO */
+@font-face {
+    font-family: 'RtI';
+    src: url('../assets/fonts/Roboto-ThinItalic.ttf');
+}
+@font-face {
+    font-family: 'RtB';
+    src: url('../assets/fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'RtBl';
+    src: url('../assets/fonts/Roboto-Black.ttf');
+}
+@font-face {
+    font-family: 'RtM';
+    src: url('../assets/fonts/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: 'RtR';
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+}
+/* TODO - FIRACODE */
+@font-face {
+    font-family: 'FcSB';
+    src: url('../assets/fonts/FiraCode-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'FcR';
+    src: url('../assets/fonts/FiraCode-Regular.ttf');
+}
+@font-face {
+    font-family: 'FcL';
+    src: url('../assets/fonts/FiraCode-Light.ttf');
+}
+.warning-box {
+    color: #ffeeb9;
+    font-family: 'RtI';
+    text-align: center;
+}
+.o1 {
+    color: #ffffff;
+    background-color: #161e2e;
+    padding-top: 2rem;
+    font-family: 'RtR';
+    text-align: justify;
+    padding-bottom: 2rem;
+}
+br {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.content {
+    margin-right: 10%;
+    margin-left: 10%;
+    line-height: 1.15;
+    text-align: left;
+}
+.center {
+    text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+    .content {
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+}
+.content2 {
+    color: #d2d6dc;
+    line-height: 2rem;
+    font-size: 1.25rem;
+}
+.content3 {
+    color: #9fa6b2;
+    line-height: 1.75rem;
+    font-size: 1.15rem
+}
+.o2 {
+    color: #ffffff;
+    background-color: #252f3f;
+    padding-top: 2rem;
+    font-family: 'RtR';
+    text-align: justify;
+    padding-bottom: 2rem;
+}
+.undr-fa {
+    margin-top: 35px;
+}
+.mouse-pointer {
+    cursor: pointer;
+}
