@@ -97,3 +97,10 @@ br {
 .mouse-pointer {
     cursor: pointer;
 }
+.when-hover:hover {
+    color: #7ed1cb;
+    transition-duration: 0.25s;
+}
+.when-hover {
+    transition-duration: 0.25s;
+}
