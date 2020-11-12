@@ -1,4 +1,4 @@
-function copyDiscordLink() {
+async function copyDiscordLink() {
     this.x;
     if (this.x === 0 || !this.x) {
         copyer("discordlink");
