@@ -1,0 +1,234 @@
+*::selection {
+    color: black;
+    background-color: yellow;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Flat-UI-Icons-16.ttf');
+}
+p {
+    margin: 0 0 10px;
+}
+a:hover {
+    text-decoration-line: none !important;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.jumbotron {
+    user-select: none;
+}
+.horizon-title {
+    font-size: 75px;
+    color: #34495E;
+    line-height: 1.4;
+}
+.horizon-subtitle {
+    font-size: 25px;
+    line-height: 0.7;
+    color: #95A5A6;
+}
+.demo-logo {
+    text-align: center;
+}
+.logo {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+}
+.text-largest {
+    font-size: xx-large;
+}
+.text-larger {
+    font-size: larger;
+}
+.text-large {
+    font-size: large;
+}
+.status {
+    text-decoration: dotted underline;
+}
+.whitelisted {
+    text-decoration: dotted underline;
+}
+.button {
+    background-color: #34495e;
+    color: white;
+    font-size: 16.5px;
+    user-select: none;
+    text-decoration: none;
+    text-shadow: none;
+    box-shadow: none;
+    text-align: center;
+    transition: 0.25s;
+}
+.button:hover {
+    text-decoration-line: none;
+    color: white;
+}
+.button:active {
+    color: rgba(255, 255, 255, 0.75);
+}
+.button.button-large {
+    border: none;
+    display: inline-block;
+    padding-bottom: 12px;
+    padding-top: 13px;
+}
+.button-large {
+    padding: 11px 19px;
+    font-size: 17.5px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+.button.button-block {
+    display: block;
+    padding-right: 0;
+    padding-left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button.button-primary {
+    background-color: #1abc9c; }
+    .button.button-primary:hover, .button.button-primary:focus {
+      background-color: #2fe2bf; }
+    .button.button-primary:active, .button.button-primary.active {
+      background-color: #16a085; }
+.links {
+    font-size: 30px;
+    font-family: monospace;
+}
+.tile {
+    background-color: #e8edf2;
+    border-radius: 6px;
+    padding: 14px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 33px;
+}
+.tile-image.big-illustration {
+    height: 111px;
+    margin-top: 20px;
+    width: 112px;
+    user-select: none;
+}
+.tile-image {
+    height: 100px;
+    margin: 31px 0 27px;
+    vertical-align: bottom;
+    user-select: none;
+}
+.tile p {
+    font-size: 15px;
+    margin-bottom: 33px;
+    color: #34495E;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.tile h3 {
+    color: #34495e;
+    font-weight: 700;
+    margin-bottom: 4px;
+    margin-top: 2px;
+}
+body {
+    color: #34495E;
+    font: 14px/1.231 'Lato', sans-serif !important;
+}
+.tile h3 {
+    font-size: 22px;
+}
+.tile h3 {
+    line-height: 40px;
+}
+.copyright {
+    color: #bdc1c5;
+    font-family: 'Lato', sans-serif
+
+}
+.copyright h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    margin-top: 2px;
+}
+.copyright p {
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+.copyright hr {
+    width: 50%;
+}
+.copyright h6 {
+    font-size: 12px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+.copyright a {
+    color: #a1a4a7;
+    transition: 0.25s;
+    font-weight: 700;
+}
+.copyright a:hover {
+    color: #2ecc71 !important;
+}
+.demo-image {
+    width: 350px;
+    height: 350px;
+}
+img {
+    user-select: none;
+}
+.exp h3 {
+    font-size: 45px;
+    color: #2C3E50;
+}
+.exp p {
+    font-size: large;
+    color: #34495E;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.demo-invite {
+    color: #34495E;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.demo-invite li a, .remodal a {
+    color: #1abc9c;
+    text-decoration: underline;
+}
+.demo-invite li a:hover, .remodal a:hover {
+    color: #1abc9c;
+    text-decoration: none;
+}
+.demo-invite {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.remodal img {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-height: 100%;
+}
+.others {
+    margin-bottom: 33px;
+}
+.button.button-info {
+    background-color: #3498db; }
+    .button.button-info:hover, .button.button-info:focus {
+    background-color: #5dade2; }
+    .button.button-info:active, .button.button-info.active {
+    background-color: #2383c4; }
+
+#modalDesc p {
+    font-size: 16px;
+}

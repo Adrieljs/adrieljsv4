@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 /* TODO - ROBOTO */
 @font-face {
     font-family: 'RtI';
@@ -37,10 +36,41 @@
     font-family: 'FcL';
     src: url('../assets/fonts/FiraCode-Light.ttf');
 }
+/* ! SOURCE CODE PRO */
+@font-face {
+    font-family: source-code-pro;
+    src: url('../assets/fonts/SourceCodePro-Regular.ttf');
+}
 .warning-box {
     color: #ffeeb9;
     font-family: 'RtI';
     text-align: center;
+}
+.d3-button {
+    -webkit-transition: all 0s ease-out;
+    -moz-transition: all 0s ease-out;
+    -o-transition: all 0s ease-out;
+    -ms-transition: all 0s ease-out;
+    transition: all 0s ease-out;
+    height: 25px;
+    display: block;
+    font-family: Arial, "Helvetica", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 15px 4px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.d3-button:active {
+    top: 3px;
 }
 .o1 {
     color: #ffffff;
@@ -51,6 +81,14 @@
     padding-bottom: 2rem;
 }
 br {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.no-user-select {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -104,3 +142,63 @@ br {
 .when-hover {
     transition-duration: 0.25s;
 }
+.message {
+    padding: 1em 1em 1em 1.5em;
+    border-left-width: 6px;
+    border-left-style: solid;
+    border-radius: 3px;
+    position: relative;
+    line-height: 1.5;
+    margin-bottom: 2em
+}
+.message + .message {
+  margin-top: 2em;
+}
+.message:before {
+  color: white;
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  top: 1em;
+  left: -3px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+}
+.message p {
+  margin: 0 0 1em;
+}
+.message p:last-child {
+  margin-bottom: 0;
+}
+
+.message--error {
+  border-left-color: firebrick;
+  background-color: #f2dede;
+  color: #a94942
+}
+.message--error:before {
+  background-color: firebrick;
+  content: "!!";
+}
+
+.message--warning {
+  border-left-color: darkorange;
+  color: rgba(138, 109, 59, 1);
+  background-color: rgba(252, 248, 227, 1);
+}
+.message--warning:before {
+  background-color: darkorange;
+  content: "!";
+}
+
+.message--success {
+  border-left-color: darkolivegreen;
+}
+.message--success:before {
+    background-color: darkolivegreen;
+    content: "✔";
+}
+/*# sourceMappingURL=base1.css.map */
