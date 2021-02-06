@@ -29,7 +29,7 @@
         <div class="fakeLoader"></div>
         <div class="jumbotron text-center demo-title-bg" style="border-radius: 0; height: 775px;">
             <ul class="breadcrumbed">
-                <li><a href="#">Home</a></li>
+                <li><a href="../index.html" target="_self">Home</a></li>
                 <li>Horizon</li>
               </ul>
             <div class="demo-content">
@@ -136,12 +136,11 @@
             <div class="container remodal-bg">
                 <div class="row">
                     <div class="col-lg">
-                        <img src="../assets/img/ribbon.png" style="position: absolute;z-index: 1; top:-4px;right: 11px;user-select: none;">
-                        <div class="tile">
+                        <img src="../assets/img/ribbon.png" id="ribbon" class="ribbon">
+                        <div class="tile" id="hot-tile">
                             <img class="tile-image big-illustration" src="../assets/img/compass.png">
                             <h3 class="tile-title">Global Chat</h3>
                             <p>Spice your server up with cross-server chatting.</p>
-                            <a class="button button-large button-block button-primary" href="./docs/commands/global-chat.html" target="_self">Learn More</a>
                         </div>
                     </div>
                     <div class="col-lg">
@@ -149,7 +148,6 @@
                             <img class="tile-image big-illustration" src="../assets/img/js.jpg">
                             <h3 class="tile-title">100% JavaScript</h3>
                             <p>Uses the discord.js library for the greater good.</p>
-                            <a class="button button-large button-block button-primary" target="_self">Learn More</a>
                         </div>
                     </div>
                     <div class="col-lg">
@@ -157,7 +155,6 @@
                             <img class="tile-image big-illustration" src="../assets/img/settings.png">
                             <h3 class="tile-title">Easy Setup</h3>
                             <p>Almost no setups needed to work in your server.</p>
-                            <a class="button button-large button-block button-primary" target="_self">Learn More</a>
                         </div>
                     </div>
                     <div class="col-lg">
@@ -165,7 +162,6 @@
                             <img class="tile-image big-illustration" src="../assets/img/clipboard.png">
                             <h3 class="tile-title">All free</h3>
                             <p>All these features and commands are 100% free.</p>
-                            <a class="button button-large button-block button-primary" target="_self">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -176,6 +172,8 @@
                 <a href="#">Commands</a>
                 |
                 <a href="#">Credits</a>
+                |
+                <a href="#">Edit Content</a>
             </div>
             <footer>
                 <div class="jumbotron remodal-bg" style="margin-bottom: 0;border-radius: 0;">
@@ -199,7 +197,7 @@
             <script src="../assets/source/remodal.js"></script>
             <script src="../assets/source/fakeLoader.min.js"></script>
             <script>
-                //fakeloader
+                // fakeloader
                 $(document).ready(function(){
                 $.fakeLoader({
                     timeToHide: 1800,
@@ -213,6 +211,15 @@
             return min + Math.random() * (max - min);
             }
 
+            //events
+            document.getElementById("hot-tile").addEventListener('mouseover', function() {
+                var x = document.getElementById("ribbon");
+                x.style.transform = 'translateY(-18%)';
+            })
+            document.getElementById("hot-tile").addEventListener("mouseout", function () {
+                var x = document.getElementById("ribbon");
+                x.style.transform = 'translateY(0%)';
+            })
             </script>
     </body>
 </html>

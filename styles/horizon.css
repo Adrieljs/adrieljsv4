@@ -34,8 +34,8 @@ p {
     text-align: center;
 }
 .logo {
-    width: 256px;
-    height: 256px;
+    width: 225px;
+    height: 225px;
     border-radius: 50%;
 }
 .text-largest {
@@ -110,6 +110,8 @@ p {
     position: relative;
     text-align: center;
     margin-bottom: 33px;
+    transition: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .tile-image.big-illustration {
     height: 111px;
@@ -124,11 +126,11 @@ p {
     user-select: none;
 }
 .tile p {
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 33px;
     color: #34495E;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 .tile h3 {
     color: #34495e;
@@ -245,7 +247,7 @@ img {
     width: 50%;
 }
 .button-xlarge {
-    font-size: xx-large;
+    font-size: x-large;
     padding-top: 15px;
     padding-bottom: 15px;
     width: 75%;
@@ -254,6 +256,45 @@ img {
     .button-xlarge {
         width: 35%;
     }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .tile {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .ribbon {
+        position: absolute;
+        z-index: 1; 
+        top: -4px;
+        right: 30%;
+        user-select: none;
+    }
+}
+    .ribbon {
+        position: absolute;
+        top: -4px;
+        right: 11%;
+        z-index: 1;
+        user-select: none;
+    }
+
+@media screen and (min-width: 992px) {
+    .ribbon {
+        position: absolute;
+        z-index: 1; 
+        top: -4px;
+        right: 10px;
+        user-select: none;
+    }
+}
+@media screen and (max-width: 768px) {
+.ribbon {
+    position: absolute;
+    z-index: 1;
+    top: -4px;
+    right: 10px;
+    user-select: none;
+}
 }
 ul.breadcrumbed {
     text-align: left;
@@ -279,3 +320,10 @@ ul.breadcrumbed {
   ul.breadcrumbed li a:hover {
       color: #16a085;
   }
+.tile:hover {
+    transform: translateY(-5%);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.ribbon {
+    transition: 0.2s;
+}
